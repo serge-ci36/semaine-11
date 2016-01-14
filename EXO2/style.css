@@ -1,4 +1,16 @@
-﻿body { 
+﻿.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    width: 400px;
+    height: 250px;
+    background-color: lightgrey;
+}
+
+.regledujeu  {margin-top:-45px ;}
+
+body { 
 	background-color:#585D95 ;
 	font-family:Arial ;
 }
