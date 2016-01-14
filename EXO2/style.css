@@ -1,0 +1,49 @@
+﻿body { 
+	background-color:#585D95 ;
+	font-family:Arial ;
+}
+
+div { margin:10px ; }
+
+#score1, #score2, #score3 {color:white ;  float:left ; font-size:70px ; }
+
+.score { 
+	background-color:#272264 ;
+	color:white ;
+	border:6px solid white ;
+	border-radius: 10px ;
+	height:100px ;
+	}
+#figure00, #figure01, #figure02, #figure03, #figure04, #figure05, #figure06, #figure07, #figure08, #figure09, #figure10, #figure11, #b_pierre, #b_feuille, #b_ciseau, #b_lezard, #b_spock { 
+	border-radius:50%;
+	border:5px solid white;
+}
+
+#affichage1, #affichage2, #affichage3, #affichage4, #affichage5 {font-size:60px ; padding-top:20px ;}
+
+#continuer, #rejouer { float:right ;margin-top:0px ;}
+
+.monchoix { 
+	background-color:#272264 ;
+	color:white ;
+	border:6px solid white ;
+	border-radius: 10px ;
+	height:470px ;
+	}
+
+#monchoix img { float:right ; }
+
+.choix img { float:left ; margin-right:10px ;margin-left:10px ; }
+
+.choix img:hover {transform: scale(1.1);}	
+
+.choix { 
+	position: fixed;
+    bottom: 10px;
+    width: 97%;
+	background-color:#272264 ;
+	color:white ;
+	border:6px solid white ;
+	border-radius: 10px ;
+	height:130px ;
+	}
