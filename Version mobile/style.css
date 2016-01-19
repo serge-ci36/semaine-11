@@ -1,0 +1,80 @@
+body { 	background-color:#585D95 ; 	font-family:Arial ; margin:0px ; padding:0px ; margin-top:10px;}
+
+div { overflow:auto ; border:0px solid red ; }
+
+.espace {width:100%;height:20px;}
+
+#score1, #score2 { color:white ;  float:left ; font-size:3em ; width:100% ;padding-left:10px; }
+#score3 { color:white ;  float:left ;  width:100% ; padding-top:15px;}
+
+#figure00, #figure01, #figure02, #figure03, #figure04, #figure05, #figure06, #figure07, #figure08, #figure09, 
+#figure10, #figure11
+{ border-radius:50% ; border:5px solid white ; width:200px ;  float:left ; }
+
+#b_pierre, #b_feuille, #b_ciseau, #b_lezard, #b_spock
+{ border-radius:50% ; border:5px solid white ; width:167px ;  float:left ; }
+
+#shell1, #shell2, #shell3  {width:300px ;margin:0px; border-radius:50% ;border:6px solid white; float:left ;}
+
+#moi {width:300px ;border-radius:50% ; border:6px solid white ; float:left ;}
+
+#affichage1, #affichage2 {width:100%;font-size:50px ;float:left ;padding-top:10px;padding-bottom:10px;}
+
+#affichage3 {font-size:40px ; padding-left:20px ;padding-top:20px ; width:70%;height:100px ;}
+
+#affichage4, #affichage5 {font-size:40px ; padding-top:20px ;padding-left:10px ; float:left ;height:100px ;}
+
+#continuer, #rejouer { float:right ; margin-top:0px ; width:200px ;bottom:0px;}
+
+
+#cj img, #cs img {float:none ;}
+
+#cj {float:left ;}
+
+#cs {float:right ;}
+
+#vs {padding-top:200px ;float:left ;}
+
+.monchoix { 
+	width:41% ;
+	padding-top:20px ;
+	background-color:#272264 ;
+	color:white ;
+	border:6px solid white ;
+	border-radius: 10px ;
+	height:750px ; 	}
+
+.choix img { float:left ; margin-right:10px ;margin-left:10px ; }
+
+.bouton_choix {float:left ;margin-top:20px ;}
+
+.titre { padding:5px ;
+	background-color:#272264 ;
+	color:white ;
+	font-size:52px ;
+	border:6px solid white ;
+	border-radius: 10px ;
+	width:100%;
+	height:100px ;
+	float:left ; 	}
+	
+.titre img {width:80px;}
+
+.choix { 
+	background-color:#272264 ;
+	color:white ;
+	border:6px solid white ;
+	border-radius: 10px ;
+	width:100%;
+	height:330px ;
+	float:left ; 	}
+	
+.total {padding:10px ;
+	background-color:#272264 ;
+	color:white ;
+	font-size:55px ;
+	border:6px solid white ;
+	border-radius: 10px ;
+	width:100%;
+	height:140px ;
+	float:left ; }

@@ -38,7 +38,7 @@ function getRandom() { return Math.random(); }
 function afficherScore() {
     $score1.innerHTML = "Joueur : " + score_humain ;
     $score2.innerHTML = "Sheldon : " + score_IA ;
-	$score3.innerHTML = "TOTAL : J-" + T_score_humain + " S-" + T_score_IA ;	}
+	$score3.innerHTML = "Total Joueur " + T_score_humain + " vs Sheldon " + T_score_IA ;	}
 
 /* affichage graphique de mon choix de signes ************************/
 function affichermonchoix(){ 
@@ -48,7 +48,7 @@ function affichermonchoix(){
 		case 0 : 
 		figure00.style.display = "block" ; figure01.style.display = "none" ; figure02.style.display = "none" ; 
 		figure03.style.display = "none" ; figure04.style.display = "none" ; figure05.style.display = "none" ; 
-		$affichage1.innerHTML = "?" ; $affichage3.innerHTML = "Choisis bien ton signe..." ; 
+		$affichage1.innerHTML = "?" ; $affichage3.innerHTML = "Réfléchis et choisis un signe." ; 
 		$continuer.style.display = "none" ;$rejouer.style.display = "none" ;break ;
 		case 1 : 
 		figure00.style.display = "none" ; figure01.style.display = "block" ; figure02.style.display = "none" ; 
@@ -138,7 +138,7 @@ function afficherchoixIA(){
 		case 0 : 
 		figure06.style.display = "block" ; figure07.style.display = "none" ; figure08.style.display = "none" ; 
 		figure09.style.display = "none" ; figure10.style.display = "none" ; figure11.style.display = "none" ; 
-		$affichage2.innerHTML = "J'attends..." ;$continuer.style.display = "none" ;$rejouer.style.display = "none" ;break ;
+		$affichage2.innerHTML = "J'attends !" ;$continuer.style.display = "none" ;$rejouer.style.display = "none" ;break ;
 		case 1 : 
 		figure06.style.display = "none" ; figure07.style.display = "block" ; figure08.style.display = "none" ; 
 		figure09.style.display = "none" ; figure10.style.display = "none" ; figure11.style.display = "none" ; 
@@ -168,26 +168,26 @@ function afficherchoixIA(){
 function verification() {  
 
 	if (choix_humain == choix_IA ) 			{ $affichage3.innerHTML = "Egalité, on recommence... " ; }
-	if (choix_humain == 3 && choix_IA == 2) { $affichage3.innerHTML = "Les ciseaux coupent la feuille.";	score_humain++ ; $affichage4.innerHTML = "Tu gagnes." ; triste() ;}
+	if (choix_humain == 3 && choix_IA == 2) { $affichage3.innerHTML = "Le ciseau coupe la feuille.";	score_humain++ ; $affichage4.innerHTML = "Tu gagnes." ; triste() ;}
 	if (choix_humain == 2 && choix_IA == 1) { $affichage3.innerHTML = "La feuille bat la pierre." ;			score_humain++ ; $affichage4.innerHTML = "Tu gagnes." ; triste() ;}
 	if (choix_humain == 1 && choix_IA == 4) { $affichage3.innerHTML = "La pierre écrase le lézard." ;   	score_humain++ ; $affichage4.innerHTML = "Tu gagnes." ; triste() ;}
 	if (choix_humain == 4 && choix_IA == 5) { $affichage3.innerHTML = "Le lézard empoisonne Spock." ;   	score_humain++ ; $affichage4.innerHTML = "Tu gagnes." ; triste() ;}
 	if (choix_humain == 5 && choix_IA == 3) { $affichage3.innerHTML = "Spock écrabouille les ciseaux.";		score_humain++ ; $affichage4.innerHTML = "Tu gagnes." ; triste() ;}
-	if (choix_humain == 3 && choix_IA == 4) { $affichage3.innerHTML = "Les ciseaux décapitent le lézard.";	score_humain++ ; $affichage4.innerHTML = "Tu gagnes." ; triste() ;}
+	if (choix_humain == 3 && choix_IA == 4) { $affichage3.innerHTML = "Le ciseau décapite le lézard.";	score_humain++ ; $affichage4.innerHTML = "Tu gagnes." ; triste() ;}
 	if (choix_humain == 4 && choix_IA == 2) { $affichage3.innerHTML = "Le lézard mange la feuille." ;		score_humain++ ; $affichage4.innerHTML = "Tu gagnes." ; triste() ;}
 	if (choix_humain == 2 && choix_IA == 5) { $affichage3.innerHTML = "La feuille repousse Spock." ;		score_humain++ ; $affichage4.innerHTML = "Tu gagnes." ; triste() ;}
-	if (choix_humain == 5 && choix_IA == 1) { $affichage3.innerHTML = "Spock détruit la pierre." ;			score_humain++ ; $affichage4.innerHTML = "Tu gagnes." ; triste() ;}
+	if (choix_humain == 5 && choix_IA == 1) { $affichage3.innerHTML = "Ah ! Spock détruit la pierre." ;			score_humain++ ; $affichage4.innerHTML = "Tu gagnes." ; triste() ;}
 	if (choix_humain == 1 && choix_IA == 3) { $affichage3.innerHTML = "La pierre bat les ciseaux." ;		score_humain++ ; $affichage4.innerHTML = "Tu gagnes." ; triste() ;}
 
-	if (choix_IA == 3 && choix_humain == 2) { $affichage3.innerHTML = "Les ciseaux coupent la feuille.";	score_IA++ ; $affichage5.innerHTML = "Je gagne." ; heureux() ;}
+	if (choix_IA == 3 && choix_humain == 2) { $affichage3.innerHTML = "Le ciseau coupe la feuille.";	score_IA++ ; $affichage5.innerHTML = "Je gagne." ; heureux() ;}
 	if (choix_IA == 2 && choix_humain == 1) { $affichage3.innerHTML = "La feuille bat la pierre." ;			score_IA++ ; $affichage5.innerHTML = "Je gagne." ; heureux() ;}
 	if (choix_IA == 1 && choix_humain == 4) { $affichage3.innerHTML = "La pierre écrase le lézard." ;   	score_IA++ ; $affichage5.innerHTML = "Je gagne." ; heureux() ;}
 	if (choix_IA == 4 && choix_humain == 5) { $affichage3.innerHTML = "Le lézard empoisonne Spock." ;   	score_IA++ ; $affichage5.innerHTML = "Je gagne." ; heureux() ;}
 	if (choix_IA == 5 && choix_humain == 3) { $affichage3.innerHTML = "Spock écrabouille les ciseaux.";		score_IA++ ; $affichage5.innerHTML = "Je gagne." ; heureux() ;}
-	if (choix_IA == 3 && choix_humain == 4) { $affichage3.innerHTML = "Les ciseaux décapitent le lézard.";	score_IA++ ; $affichage5.innerHTML = "Je gagne." ; heureux() ;}
+	if (choix_IA == 3 && choix_humain == 4) { $affichage3.innerHTML = "Le ciseau décapite le lézard.";	score_IA++ ; $affichage5.innerHTML = "Je gagne." ; heureux() ;}
 	if (choix_IA == 4 && choix_humain == 2) { $affichage3.innerHTML = "Le lézard mange la feuille." ;		score_IA++ ; $affichage5.innerHTML = "Je gagne." ; heureux() ;}
 	if (choix_IA == 2 && choix_humain == 5) { $affichage3.innerHTML = "La feuille repousse Spock." ;		score_IA++ ; $affichage5.innerHTML = "Je gagne." ; heureux() ;}
-	if (choix_IA == 5 && choix_humain == 1) { $affichage3.innerHTML = "Spock détruit la pierre." ;			score_IA++ ; $affichage5.innerHTML = "Je gagne." ; heureux() ;}
+	if (choix_IA == 5 && choix_humain == 1) { $affichage3.innerHTML = "Ah ! Spock détruit la pierre." ;			score_IA++ ; $affichage5.innerHTML = "Je gagne." ; heureux() ;}
 	if (choix_IA == 1 && choix_humain == 3) { $affichage3.innerHTML = "La pierre bat les ciseaux." ;		score_IA++ ; $affichage5.innerHTML = "Je gagne." ; heureux() ;}
 	
 	
